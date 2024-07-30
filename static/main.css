@@ -1,0 +1,190 @@
+body{
+  margin-top: 100px;
+  background-color: whitesmoke;
+}
+
+*{
+  font-family: poppins;
+}
+
+.plus{
+  color: red;
+}
+
+.header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border: 2px solid;
+  border-left: 0;
+  border-right: 0;
+  background-color: rgb(226, 226, 226);
+  z-index: 999;
+}
+
+.butn:hover{
+  cursor: pointer;
+}
+
+.container{
+  padding:0 2rem;
+}
+
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: poppins;
+}
+
+.icon-container{
+  width: 30px;
+}
+
+.select{
+  width: 200px;
+  height: 30px;
+}
+
+/*----------------------------DROPDOWN----------------------------*/
+
+/* Dropdown Button */
+.dropbtn {
+  border-radius: 7px;
+  transition: .2s;
+  background-color: #006fca;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover{
+  background-color: #008bfd;
+}
+
+/* The search field */
+#myInput {
+  padding: 14px 100px 12px 45px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+
+/* The search field when it gets focus/clicked on */
+#myInput:focus {outline: 3px solid #ddd;}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  max-width: fit-content;
+  align-self: center;
+
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: relative;
+  top: 1px;
+  background-color: #f6f6f6;
+  min-width: 230px;
+  border: 1px solid #ddd;
+  z-index: 1;
+  min-height: 300px;
+}
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #a1a1a1}
+
+.scrollable-menu {
+  height: auto;
+  max-height: 200px;
+  overflow-x: hidden;
+}
+
+.btn{
+  margin: 5px;
+  border: black solid 2px;
+}
+
+.btn:focus{
+  outline: none;
+  box-shadow: none;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+  display:block;
+}
+
+/*----------------------------DROPDOWN----------------------------*/
+.dropdown-container{
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.spacing{
+  height: 45px;
+}
+
+.symptom-selected{
+  border: black solid 2px;
+  border-radius: 5px;
+  margin: 20px;
+  position: relative;
+  min-width: 65%;
+  max-width: 65%;
+  min-height: 54px;
+}
+
+.shhh{
+  padding-top: 300px;
+}
+
+.symptom-selected-container{
+  height: auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.sel-sym-txt{
+  position: absolute;
+  font-weight: 600;
+}
+
+
+.diagnose-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.medkit{
+  color: white;
+  padding-bottom: 5px;
+  width: 25px;
+}
+
+.symp-btn{
+  position: relative;
+}
+
+.symp-btn:hover{
+  color: white;
+  background-color: red;
+}
